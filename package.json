@@ -1,0 +1,27 @@
+{
+  "name": "fbchatbot",
+  "version": "1.0.0",
+  "description": "A demo app on using fb messenger platform, and setting up a bot. Also aims to implement wit.ai capabilities into the app. Hosted on Heroku",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rishabhio/fbchatbot.git"
+  },
+  "keywords": [
+    "fb",
+    "messenger",
+    "platform",
+    "chatbot",
+    "heroku",
+    "nodejs"
+  ],
+  "author": "@rishabhio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rishabhio/fbchatbot/issues"
+  },
+  "homepage": "https://github.com/rishabhio/fbchatbot#readme"
+}
