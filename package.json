@@ -4,7 +4,7 @@
   "description": "A demo app on using fb messenger platform, and setting up a bot. Also aims to implement wit.ai capabilities into the app. Hosted on Heroku",
   "main": "app.js",
   "scripts": {
-	"start": "node app.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/rishabhio/fbchatbot/issues"
   },
-  "homepage": "https://github.com/rishabhio/fbchatbot#readme"
+  "homepage": "https://github.com/rishabhio/fbchatbot#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
