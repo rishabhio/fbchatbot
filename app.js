@@ -1,11 +1,15 @@
 
 var express = require('express');
+var bodyParser = require('body-parser');
+var request = require('request');
+var jsonParser = bodyParser.json();
+
 var app = express();
 var VALIDATION_TOKEN = process.env.MESSENGER_VALIDATION_TOKEN;
 
 app.get('/', function (req, res) {
   res.send('Hello World!');
-  console.log('served a request');
+  console.log('served a request 0.0.2');
 });
 
 app.get('/webhook', function(req, res) {
@@ -19,10 +23,8 @@ app.get('/webhook', function(req, res) {
   }  
 });
 
-app.post('/webhook', function(req,res){
-	console.log(req);
+app.post('/webhook', jsonParser, function(req,res){
 	  var data = req.body;
-	console.log(data);
   // Make sure this is a page subscription
   if (data.object == 'page') {
     // Iterate over each entry
